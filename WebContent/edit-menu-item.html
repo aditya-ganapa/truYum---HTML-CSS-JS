@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<nav>
+	<p>
+		truYum
+		<img src="images/logo.jpg" alt="logo">
+		<a href="menu-item-list-admin.html">Menu</a>
+	</p>
+</nav>
+<section>
+	<h2>Edit Menu Item</h2>
+	<form name="myForm" onsubmit="return validateForm()" action="edit-menu-item-status.html">
+		<table>
+			<tr>
+				<td colspan="4">
+					<label for="field-title">Name</label><br>
+					<input type="text" id="field-title" name="title">
+				</td>
+			</tr>
+			<tr>
+				<td>
+	    			<label for="field-price">Price (Rs.)</label><br>
+					<input type="text" id="field-price" name="price">
+				</td>
+				<td>
+					Active<br>
+					<input type="radio" id="field-inStock-yes" name="inStock" value="yes"><label for="field-inStock-yes"> Yes </label><input type="radio" name="inStock" id="field-inStock-no" value="no"><label for="field-inStock-no"> No</label>
+				</td>
+				<td>
+					<label for="field-dateOfLaunch">Date of Launch</label><br>
+					<input type="text" id="field-dateOfLaunch" name="dateOfLaunch">
+				</td>
+				<td>
+					<label for="field-category">Category</label><br>
+					<select id="field-category" name="category">
+						<option value=""></option>
+						<option value="starters">Starters</option>
+						<option value="maincourse">Main Course</option>
+						<option value="dessert">Dessert</option>
+						<option value="drinks">Drinks</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="field-freeDelivery" name="freeDelivery" value="yes"><label for="field-freeDelivery"> Free Delivery</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="submit" value="Save">
+				</td>
+			</tr>
+		</table>
+	</form>
+</section>
+<footer>	
+  <p>Copyright &copy; 2019</p>
+</footer>
+</body>
+</html>
